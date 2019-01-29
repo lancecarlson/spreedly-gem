@@ -256,7 +256,7 @@ module Spreedly
       build_xml_request('payment_method') do |doc|
         add_to_doc(doc, options, :data, :retained, :email)
         doc.bank_account do
-          add_to_doc(doc, options, :first_name, :last_name, :bank_account_number, :bank_routing_number, :bank_account_type, :bank_account_holder_type)
+          add_to_doc(doc, options, :full_name, :first_name, :last_name, :bank_account_number, :bank_routing_number, :bank_account_type, :bank_account_holder_type)
         end
       end
     end
